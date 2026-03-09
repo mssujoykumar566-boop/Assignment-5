@@ -1,7 +1,8 @@
 
 
-document.getElementById('signIn-btn').addEventListener('click',function(){
+document.getElementById('signIn-btn').addEventListener('click',function(e){
     //1. get the userName input
+    e.preventDefault()
     const inputText = document.getElementById('input-text');
     const userName = inputText.value;
     console.log(userName)
