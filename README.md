@@ -1,128 +1,69 @@
-# 🌟 Welcome To (সহজ সরল সিম্পল) Assignment - 5
-
-# **📅 Deadline For 60 marks:** 9th March, 2026 (11:59 pm ⏱️)  
-#  📅 No Deadline For 50 marks  
-# **📅 Deadline For 30 marks:** Any time after 9th March.
-
----
-
-# Assignment-05: GitHub Issues Tracker
-
-
-### **API Endpoints:**
-###  **All Issues:** 
-  - https://phi-lab-server.vercel.app/api/v1/lab/issues 
-
-
-###  **Single Issue:**
-   - https://phi-lab-server.vercel.app/api/v1/lab/issue/{id}
-
-   - Example: https://phi-lab-server.vercel.app/api/v1/lab/issue/33
-
-
-###  **Search Issue:** https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q={searchText}
-
-   - Example:  https://phi-lab-server.vercel.app/api/v1/lab/issues/search?q=notifications
-
-
----
-
-## 📝 Main Requirements
-
-## 🎨 Design Part
-
-## Login Page
-- Create a login page containing a logo, title, and sub-title
-- Below that, there will be 2 inputs, a sign-in button, and a demo credential to sign in. Follow the Figma for this page 
-- Styled as per Figma
-
-## Main Page: 
-
-### Navbar: 
-
-- Navbar with website logo/name on the left
-- Search input and button on the right
-
-### Tab Section like Figma: 
-
-- 3 tab ( All, Open, Closed) at the top of this section.(**All**, **Open**, **Closed**)
-
-- Below the tab, there will be an icon, the issue count, some text on the left, and an open and closed marker on the right
-
-- Responsiveness: The website should be responsive for mobile devices. It is totally up to you. 
-
-
---- 
-
-
-## ⚙️ Functionalities
-- In login page, there will be default admin credentials (username, password). You need to sign in using these credentials.
-
-- Load all issues and display as per Figma
-
-- On clicking on an open or closed tab, it will load the issues data of the related tab and show it in a display-like card in a 4-column layout like Figma. By default, it will show all data 
-
-- Each card shows:
-  - Title
-  - Description
-  - Status 
-  - Author
-  - Priority
-  - Label
-  - CreatedAt
-- Clicking on an issue  card will open a modal and show all the information about that Issue. 
-
-### 🚀 Challenges
-
-
-- Show the card Top border based on their category(open, closed), open card will have Green Boder, closed card will have a purple border on top. 
-
-- Loading spinner on data load
-
-- Show active button on changing category names
-
-- Implement Search Functionality and 8 meaningful github commit.  
-
-- Create a readme file and answer this question on your own. Don’t copy-paste from Google or any AI chatbot. 
+ 
     - 1️⃣ What is the difference between var, let, and const?
+Answer:JavaScript এ var, let, এবং const দিয়ে variable declare করা হয়। কিন্তু এদের মধ্যে scope, reassign, hoisting ইত্যাদিতে পার্থক্য আছে। 
+Example: a. var...
+Function scoped
+Re-declare করা যায়
+Reassign করা যায়
+Hoisting হয়
+
+b.let...
+Block scoped
+Reassign করা যায়
+Re-declare করা যায় না
+
+c.const...
+Block scoped
+Reassign করা যায় না
+Re-declare করা যায় না
+declare করার সময় value দিতে হয়
+
+
     - 2️⃣ What is the spread operator (...)?
+Answer:JavaScript এ Spread Operator (...) ব্যবহার করা ফলে একটা array বা object এর ভিতরের সব element আলাদা করে বের করে দেয়।
+উদাহরণঃ
+Array expand	...arr
+Array copy	[...arr]
+Array merge	[...a,...b]
+Object copy	{...obj}
+Function arguments	fn(...arr)
+
     - 3️⃣ What is the difference between map(), filter(), and forEach()?
+    Answer:JavaScript এ map(), filter(), এবং forEach() তিনটিই array এর উপর loop চালানোর জন্য ব্যবহার হয়।
+    কিন্তু এদের কাজ ও return value আলাদা।
+    উদাহরণঃ
+    a.map()
+
+map() নতুন array return করে।
+
+এটা সাধারণত ব্যবহার হয় array এর data modify করার জন্য।
+
+b.filter()
+
+filter() condition অনুযায়ী element select করে নতুন array return করে।
+
+c.forEach()
+
+forEach() শুধু loop চালায়, কোনো নতুন array return করে না।
+
     - 4️⃣ What is an arrow function?
+    Answer:Arrow Function হলো JavaScript-এর একটি short / modern way function লেখার জন্য।
+এটা ES6 (ECMAScript 2015) এ এসেছে এবং সাধারণ function এর তুলনায় ছোট ও সহজ syntax ব্যবহার করে।
+
     - 5️⃣ What are template literals?
+    Answer:Template Literals হলো JavaScript-এর একটি feature (ES6) যা দিয়ে string সহজভাবে লিখতে এবং variable বা expression string এর ভিতরে বসাতে পারা যায়।
+   এতে backtick ( ) ব্যবহার করা হয়, single ' ' বা double " " quote নয়।
+   Normal String আগে variable + string যোগ করতে + ব্যবহার  করতে হতো
+   কিন্তু,
+Template literal ব্যবহার করলে ${} দিয়ে variable বসানো যায়।
 
+Expression ব্যবহার করে ${} এর ভিতরে calculation বা JS expression করা যায়।
 
----
+Multi-line String Template literal দিয়ে multi-line string সহজে লেখা যায়।
 
-## 🛠️ Technology Stack
-
-- **HTML**
-- **CSS** (Vanilla/Tailwind/DaisyUI)
-- **JavaScript** (Vanilla)
-
----
-
-## 🔑 Demo Credentials
-
-```text
-Username: admin
-Password: admin123
-```
-
-
----
-
-### Optional: 
- - No need to show status: Open, Closed styles On modals. 
- - No Need to show icon on labels 
- - No need to apply styles on Priority 
---- 
-
-
-## 📤 What to submit
-
-- **GitHub Repository Link:**
-- **Live Site Link:**
-
----
-
+Feature	Explanation
+Backtick	` ` ব্যবহার হয়
+Variable insert	${variable}
+Expression	${a+b}
+Multi-line	multiple line support
 
