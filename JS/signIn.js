@@ -13,7 +13,7 @@ document.getElementById('signIn-btn').addEventListener('click',function(){
      //3. match userName & password
     if (userName == 'admin' && password == 'admin123'){
         alert("Sign In Sucessfull")
-        window.location.assign("/Assignment-5/home.html")
+        window.location.assign("/home.html")
     }else{
         alert("Sign In Failed")
         return;
